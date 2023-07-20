@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B08F7CE206F5E4F00485F96 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F7CD206F5E4F00485F96 /* ProfileViewController.swift */; };
+		3B08F7D0206F5F9400485F96 /* ProfilePersonalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F7CF206F5F9400485F96 /* ProfilePersonalTableViewCell.swift */; };
+		3B08F7D22070BC8B00485F96 /* FansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F7D12070BC8B00485F96 /* FansViewController.swift */; };
+		3B08F7D42070BE9200485F96 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F7D32070BE9200485F96 /* FollowViewController.swift */; };
+		3B08F7D62070C2BA00485F96 /* FansTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F7D52070C2BA00485F96 /* FansTableViewCell.swift */; };
+		3B08F7D82070C2C800485F96 /* FollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F7D72070C2C800485F96 /* FollowTableViewCell.swift */; };
+		3B0E08D82061842500259F5C /* FacebookLogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E08D72061842500259F5C /* FacebookLogoutViewController.swift */; };
+		3B0E5C2A205CB50500E59C26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E5C29205CB50500E59C26 /* AppDelegate.swift */; };
+		3B0E5C2C205CB50500E59C26 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E5C2B205CB50500E59C26 /* FacebookLoginViewController.swift */; };
+		3B0E5C2F205CB50500E59C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0E5C2D205CB50500E59C26 /* Main.storyboard */; };
+		3B0E5C32205CB50500E59C26 /* FBLoginTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E5C30205CB50500E59C26 /* FBLoginTest.xcdatamodeld */; };
+		3B0E5C34205CB50500E59C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0E5C33205CB50500E59C26 /* Assets.xcassets */; };
+		3B0E5C37205CB50500E59C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0E5C35205CB50500E59C26 /* LaunchScreen.storyboard */; };
+		3B129F30207A424800950FDB /* LoginRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B129F2F207A424800950FDB /* LoginRequestViewController.swift */; };
+		3B20749E20C14608003DE377 /* ProfileTripHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20749D20C14608003DE377 /* ProfileTripHistoryTableViewCell.swift */; };
+		3B3133002081E6CD00E44619 /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3132FF2081E6CD00E44619 /* GoViewController.swift */; };
+		3B3133022081E9C600E44619 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3133012081E9C600E44619 /* ExploreViewController.swift */; };
+		3B3E3DF420749FE8004A9705 /* AdventureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E3DF320749FE8004A9705 /* AdventureViewController.swift */; };
+		3B3E3DF82074A05D004A9705 /* AdventureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E3DF72074A05D004A9705 /* AdventureTableViewCell.swift */; };
+		3B3E3DFA2075CC79004A9705 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E3DF92075CC79004A9705 /* AddEventViewController.swift */; };
+		3B3E3DFC2075CC8E004A9705 /* AddEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E3DFB2075CC8E004A9705 /* AddEventTableViewCell.swift */; };
+		3B3E3DFE20760859004A9705 /* SetPrivateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E3DFD20760859004A9705 /* SetPrivateViewController.swift */; };
+		3B3E3E00207608A9004A9705 /* SetPrivateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E3DFF207608A9004A9705 /* SetPrivateTableViewCell.swift */; };
+		3B3F74C520999023007418E4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F74C420999023007418E4 /* EditProfileViewController.swift */; };
+		3B40A2C321124BEB0074D7E7 /* hashTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40A2C221124BEB0074D7E7 /* hashTag.swift */; };
+		3B81D466208472B300359FAC /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81D465208472B300359FAC /* ExploreTableViewCell.swift */; };
+		3B81D46A208472E800359FAC /* ExploreTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81D469208472E800359FAC /* ExploreTripViewController.swift */; };
+		3BA1261020825C0B00499E4E /* GoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA1260F20825C0B00499E4E /* GoTableViewCell.swift */; };
+		3BA126122082E71300499E4E /* GoTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA126112082E71300499E4E /* GoTripViewController.swift */; };
+		3BE611C5206B26E400DF494E /* LoginPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE611C4206B26E400DF494E /* LoginPagesViewController.swift */; };
+		8D4B336B210EBD9700191415 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B336A210EBD9700191415 /* test.swift */; };
+		8DCD2F9E20C919490071CDCD /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD2F9D20C919490071CDCD /* Trip.swift */; };
+		8DE9F54F209AE0E200D03E9E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F54E209AE0E200D03E9E /* Model.swift */; };
+		8DE9F551209AE10A00D03E9E /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F550209AE10A00D03E9E /* StatusCode.swift */; };
+		8DE9F553209AE13400D03E9E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F552209AE13400D03E9E /* Profile.swift */; };
+		8DE9F555209AE19E00D03E9E /* TodoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F554209AE19E00D03E9E /* TodoFile.swift */; };
+		B46374680A983A6DA1ECEC50 /* Pods_FBLoginTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DEE766C9C7D70F2E6788E9B /* Pods_FBLoginTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DEE766C9C7D70F2E6788E9B /* Pods_FBLoginTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLoginTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B08F7CD206F5E4F00485F96 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3B08F7CF206F5F9400485F96 /* ProfilePersonalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePersonalTableViewCell.swift; sourceTree = "<group>"; };
+		3B08F7D12070BC8B00485F96 /* FansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FansViewController.swift; sourceTree = "<group>"; };
+		3B08F7D32070BE9200485F96 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		3B08F7D52070C2BA00485F96 /* FansTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FansTableViewCell.swift; sourceTree = "<group>"; };
+		3B08F7D72070C2C800485F96 /* FollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTableViewCell.swift; sourceTree = "<group>"; };
+		3B0E08D72061842500259F5C /* FacebookLogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLogoutViewController.swift; sourceTree = "<group>"; };
+		3B0E5C26205CB50500E59C26 /* FBLoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0E5C29205CB50500E59C26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B0E5C2B205CB50500E59C26 /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
+		3B0E5C2E205CB50500E59C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B0E5C31205CB50500E59C26 /* FBLoginTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FBLoginTest.xcdatamodel; sourceTree = "<group>"; };
+		3B0E5C33205CB50500E59C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B0E5C36205CB50500E59C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B0E5C38205CB50500E59C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B129F2F207A424800950FDB /* LoginRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestViewController.swift; sourceTree = "<group>"; };
+		3B20749D20C14608003DE377 /* ProfileTripHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTripHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		3B3132FF2081E6CD00E44619 /* GoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewController.swift; sourceTree = "<group>"; };
+		3B3133012081E9C600E44619 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		3B3E3DF320749FE8004A9705 /* AdventureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureViewController.swift; sourceTree = "<group>"; };
+		3B3E3DF72074A05D004A9705 /* AdventureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureTableViewCell.swift; sourceTree = "<group>"; };
+		3B3E3DF92075CC79004A9705 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		3B3E3DFB2075CC8E004A9705 /* AddEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventTableViewCell.swift; sourceTree = "<group>"; };
+		3B3E3DFD20760859004A9705 /* SetPrivateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPrivateViewController.swift; sourceTree = "<group>"; };
+		3B3E3DFF207608A9004A9705 /* SetPrivateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPrivateTableViewCell.swift; sourceTree = "<group>"; };
+		3B3F74C420999023007418E4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		3B40A2C221124BEB0074D7E7 /* hashTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hashTag.swift; sourceTree = "<group>"; };
+		3B81D465208472B300359FAC /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
+		3B81D469208472E800359FAC /* ExploreTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTripViewController.swift; sourceTree = "<group>"; };
+		3BA1260F20825C0B00499E4E /* GoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTableViewCell.swift; sourceTree = "<group>"; };
+		3BA126112082E71300499E4E /* GoTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTripViewController.swift; sourceTree = "<group>"; };
+		3BE611C4206B26E400DF494E /* LoginPagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPagesViewController.swift; sourceTree = "<group>"; };
+		6F433DF32CEE3D418900E6C8 /* Pods-FBLoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLoginTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBLoginTest/Pods-FBLoginTest.release.xcconfig"; sourceTree = "<group>"; };
+		8D4B336A210EBD9700191415 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		8DCD2F9D20C919490071CDCD /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		8DE9F54E209AE0E200D03E9E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8DE9F550209AE10A00D03E9E /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		8DE9F552209AE13400D03E9E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		8DE9F554209AE19E00D03E9E /* TodoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoFile.swift; sourceTree = "<group>"; };
+		99E0FF3B5CCBF7B26E231102 /* Pods-FBLoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLoginTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBLoginTest/Pods-FBLoginTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B0E5C23205CB50500E59C26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46374680A983A6DA1ECEC50 /* Pods_FBLoginTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B0E5C1D205CB50500E59C26 = {
+			isa = PBXGroup;
+			children = (
+				3B0E5C28205CB50500E59C26 /* FBLoginTest */,
+				3B0E5C27205CB50500E59C26 /* Products */,
+				797FCF83D2A9F951B59EF0BE /* Pods */,
+				B3BC8E63E1E94E4ACA75B573 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B0E5C27205CB50500E59C26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E5C26205CB50500E59C26 /* FBLoginTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B0E5C28205CB50500E59C26 /* FBLoginTest */ = {
+			isa = PBXGroup;
+			children = (
+				3B129F31207A4CBD00950FDB /* GetApi */,
+				3B3132FC2081B67D00E44619 /* Explore */,
+				3B3132FE2081B69C00E44619 /* Talk */,
+				3B3132FD2081B69200E44619 /* Go */,
+				3B3E3DF62074A00B004A9705 /* Adventure */,
+				3B3E3DF52074A002004A9705 /* Profile */,
+				3B129F32207A4CEB00950FDB /* LoginRegister */,
+				3B0E5C29205CB50500E59C26 /* AppDelegate.swift */,
+				3B0E5C2D205CB50500E59C26 /* Main.storyboard */,
+				3B0E5C33205CB50500E59C26 /* Assets.xcassets */,
+				3B0E5C35205CB50500E59C26 /* LaunchScreen.storyboard */,
+				3B0E5C38205CB50500E59C26 /* Info.plist */,
+				3B0E5C30205CB50500E59C26 /* FBLoginTest.xcdatamodeld */,
+			);
+			path = FBLoginTest;
+			sourceTree = "<group>";
+		};
+		3B129F31207A4CBD00950FDB /* GetApi */ = {
+			isa = PBXGroup;
+			children = (
+				3B129F2F207A424800950FDB /* LoginRequestViewController.swift */,
+				8DE9F54E209AE0E200D03E9E /* Model.swift */,
+				8DE9F550209AE10A00D03E9E /* StatusCode.swift */,
+				8DE9F552209AE13400D03E9E /* Profile.swift */,
+				8DE9F554209AE19E00D03E9E /* TodoFile.swift */,
+				8DCD2F9D20C919490071CDCD /* Trip.swift */,
+				8D4B336A210EBD9700191415 /* test.swift */,
+			);
+			path = GetApi;
+			sourceTree = "<group>";
+		};
+		3B129F32207A4CEB00950FDB /* LoginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				3BE611C4206B26E400DF494E /* LoginPagesViewController.swift */,
+				3B0E5C2B205CB50500E59C26 /* FacebookLoginViewController.swift */,
+				3B0E08D72061842500259F5C /* FacebookLogoutViewController.swift */,
+			);
+			path = LoginRegister;
+			sourceTree = "<group>";
+		};
+		3B3132FC2081B67D00E44619 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				3B3133012081E9C600E44619 /* ExploreViewController.swift */,
+				3B81D465208472B300359FAC /* ExploreTableViewCell.swift */,
+				3B81D469208472E800359FAC /* ExploreTripViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		3B3132FD2081B69200E44619 /* Go */ = {
+			isa = PBXGroup;
+			children = (
+				3B3132FF2081E6CD00E44619 /* GoViewController.swift */,
+				3BA1260F20825C0B00499E4E /* GoTableViewCell.swift */,
+				3BA126112082E71300499E4E /* GoTripViewController.swift */,
+			);
+			path = Go;
+			sourceTree = "<group>";
+		};
+		3B3132FE2081B69C00E44619 /* Talk */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Talk;
+			sourceTree = "<group>";
+		};
+		3B3E3DF52074A002004A9705 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3B08F7CD206F5E4F00485F96 /* ProfileViewController.swift */,
+				3B08F7CF206F5F9400485F96 /* ProfilePersonalTableViewCell.swift */,
+				3B20749D20C14608003DE377 /* ProfileTripHistoryTableViewCell.swift */,
+				3B08F7D12070BC8B00485F96 /* FansViewController.swift */,
+				3B08F7D52070C2BA00485F96 /* FansTableViewCell.swift */,
+				3B08F7D32070BE9200485F96 /* FollowViewController.swift */,
+				3B08F7D72070C2C800485F96 /* FollowTableViewCell.swift */,
+				3B3F74C420999023007418E4 /* EditProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3B3E3DF62074A00B004A9705 /* Adventure */ = {
+			isa = PBXGroup;
+			children = (
+				3B3E3DF320749FE8004A9705 /* AdventureViewController.swift */,
+				3B3E3DF72074A05D004A9705 /* AdventureTableViewCell.swift */,
+				3B3E3DF92075CC79004A9705 /* AddEventViewController.swift */,
+				3B3E3DFB2075CC8E004A9705 /* AddEventTableViewCell.swift */,
+				3B3E3DFD20760859004A9705 /* SetPrivateViewController.swift */,
+				3B3E3DFF207608A9004A9705 /* SetPrivateTableViewCell.swift */,
+				3B40A2C221124BEB0074D7E7 /* hashTag.swift */,
+			);
+			path = Adventure;
+			sourceTree = "<group>";
+		};
+		797FCF83D2A9F951B59EF0BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99E0FF3B5CCBF7B26E231102 /* Pods-FBLoginTest.debug.xcconfig */,
+				6F433DF32CEE3D418900E6C8 /* Pods-FBLoginTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3BC8E63E1E94E4ACA75B573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE766C9C7D70F2E6788E9B /* Pods_FBLoginTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B0E5C25205CB50500E59C26 /* FBLoginTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0E5C3B205CB50500E59C26 /* Build configuration list for PBXNativeTarget "FBLoginTest" */;
+			buildPhases = (
+				32F2C261FD2886B92E3A736D /* [CP] Check Pods Manifest.lock */,
+				3B0E5C22205CB50500E59C26 /* Sources */,
+				3B0E5C23205CB50500E59C26 /* Frameworks */,
+				3B0E5C24205CB50500E59C26 /* Resources */,
+				69CEF36AB029B9F96F929C53 /* [CP] Embed Pods Frameworks */,
+				9460B6F9019E923A70A09A98 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBLoginTest;
+			productName = FBLoginTest;
+			productReference = 3B0E5C26205CB50500E59C26 /* FBLoginTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B0E5C1E205CB50500E59C26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = iDEA;
+				TargetAttributes = {
+					3B0E5C25205CB50500E59C26 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3B0E5C21205CB50500E59C26 /* Build configuration list for PBXProject "FBLoginTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B0E5C1D205CB50500E59C26;
+			productRefGroup = 3B0E5C27205CB50500E59C26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B0E5C25205CB50500E59C26 /* FBLoginTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B0E5C24205CB50500E59C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0E5C37205CB50500E59C26 /* LaunchScreen.storyboard in Resources */,
+				3B0E5C34205CB50500E59C26 /* Assets.xcassets in Resources */,
+				3B0E5C2F205CB50500E59C26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32F2C261FD2886B92E3A736D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBLoginTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69CEF36AB029B9F96F929C53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FBLoginTest/Pods-FBLoginTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBLoginTest/Pods-FBLoginTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9460B6F9019E923A70A09A98 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBLoginTest/Pods-FBLoginTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B0E5C22205CB50500E59C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B40A2C321124BEB0074D7E7 /* hashTag.swift in Sources */,
+				3B3133002081E6CD00E44619 /* GoViewController.swift in Sources */,
+				3B20749E20C14608003DE377 /* ProfileTripHistoryTableViewCell.swift in Sources */,
+				3B3E3DF82074A05D004A9705 /* AdventureTableViewCell.swift in Sources */,
+				3B08F7CE206F5E4F00485F96 /* ProfileViewController.swift in Sources */,
+				3B08F7D62070C2BA00485F96 /* FansTableViewCell.swift in Sources */,
+				8D4B336B210EBD9700191415 /* test.swift in Sources */,
+				3B3E3DFA2075CC79004A9705 /* AddEventViewController.swift in Sources */,
+				3B81D46A208472E800359FAC /* ExploreTripViewController.swift in Sources */,
+				3BA126122082E71300499E4E /* GoTripViewController.swift in Sources */,
+				3B129F30207A424800950FDB /* LoginRequestViewController.swift in Sources */,
+				3B08F7D0206F5F9400485F96 /* ProfilePersonalTableViewCell.swift in Sources */,
+				3B08F7D22070BC8B00485F96 /* FansViewController.swift in Sources */,
+				3BA1261020825C0B00499E4E /* GoTableViewCell.swift in Sources */,
+				8DE9F551209AE10A00D03E9E /* StatusCode.swift in Sources */,
+				3B08F7D42070BE9200485F96 /* FollowViewController.swift in Sources */,
+				3B3E3DF420749FE8004A9705 /* AdventureViewController.swift in Sources */,
+				3B0E08D82061842500259F5C /* FacebookLogoutViewController.swift in Sources */,
+				3B0E5C2C205CB50500E59C26 /* FacebookLoginViewController.swift in Sources */,
+				3B81D466208472B300359FAC /* ExploreTableViewCell.swift in Sources */,
+				8DE9F553209AE13400D03E9E /* Profile.swift in Sources */,
+				8DCD2F9E20C919490071CDCD /* Trip.swift in Sources */,
+				3B3133022081E9C600E44619 /* ExploreViewController.swift in Sources */,
+				3B0E5C2A205CB50500E59C26 /* AppDelegate.swift in Sources */,
+				8DE9F54F209AE0E200D03E9E /* Model.swift in Sources */,
+				3BE611C5206B26E400DF494E /* LoginPagesViewController.swift in Sources */,
+				3B3E3E00207608A9004A9705 /* SetPrivateTableViewCell.swift in Sources */,
+				3B08F7D82070C2C800485F96 /* FollowTableViewCell.swift in Sources */,
+				3B3E3DFC2075CC8E004A9705 /* AddEventTableViewCell.swift in Sources */,
+				3B0E5C32205CB50500E59C26 /* FBLoginTest.xcdatamodeld in Sources */,
+				3B3F74C520999023007418E4 /* EditProfileViewController.swift in Sources */,
+				3B3E3DFE20760859004A9705 /* SetPrivateViewController.swift in Sources */,
+				8DE9F555209AE19E00D03E9E /* TodoFile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B0E5C2D205CB50500E59C26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B0E5C2E205CB50500E59C26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B0E5C35205CB50500E59C26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B0E5C36205CB50500E59C26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B0E5C39205CB50500E59C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B0E5C3A205CB50500E59C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B0E5C3C205CB50500E59C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E0FF3B5CCBF7B26E231102 /* Pods-FBLoginTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UEHW4DG627;
+				INFOPLIST_FILE = FBLoginTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FBLoginTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos11.2;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B0E5C3D205CB50500E59C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F433DF32CEE3D418900E6C8 /* Pods-FBLoginTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UEHW4DG627;
+				INFOPLIST_FILE = FBLoginTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FBLoginTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos11.2;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B0E5C21205CB50500E59C26 /* Build configuration list for PBXProject "FBLoginTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0E5C39205CB50500E59C26 /* Debug */,
+				3B0E5C3A205CB50500E59C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B0E5C3B205CB50500E59C26 /* Build configuration list for PBXNativeTarget "FBLoginTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0E5C3C205CB50500E59C26 /* Debug */,
+				3B0E5C3D205CB50500E59C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B0E5C30205CB50500E59C26 /* FBLoginTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B0E5C31205CB50500E59C26 /* FBLoginTest.xcdatamodel */,
+			);
+			currentVersion = 3B0E5C31205CB50500E59C26 /* FBLoginTest.xcdatamodel */;
+			path = FBLoginTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3B0E5C1E205CB50500E59C26 /* Project object */;
+}

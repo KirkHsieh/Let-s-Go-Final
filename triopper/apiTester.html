@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <p>API:
+        <input id="api" type="text" />
+    </p>
+    <p>DATA:
+        <input id="data" type="text" />
+    </p>
+    <P>
+        <button>SEND</button>
+        <fb:login-button scope="user_location,public_profile,email" onlogin="checkLoginState()">
+                <div  class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+</fb:login-button>
+        
+    </P>
+    <pre>
+
+    </pre>
+
+    <script>
+        var $ = function (_selector, _element) {
+                //[init]
+                if (_element == undefined)
+                    _element = document;
+
+                return _element.querySelectorAll(_selector);
+            }
+        var put = $("pre")[0];
+
+
+        function statusChangeCallback(response) {
+            if (response.status == 'connected') {
+                put.innerText = response.authResponse.accessToken;
+            }
+            return response.status == 'connected';
+        }
+
+        function checkLoginState() {
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+        }
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1741588045862144',
+                xfbml: true,
+                version: 'v2.12'
+            });
+            FB.AppEvents.logPageView();
+
+            checkLoginState();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        (function () {
+            var pass = function () { };
+            
+            var XHRequest = function (dataset) {
+
+
+                var param = Object.assign({ url: "/", method: "GET", data: null, dataType: "json", success: pass, error: pass }, dataset);
+                /*about _error(_code)
+                  error code that represent what happened on Request Executing
+            
+                  -1 : fail to create XHR object
+                  -2 : fail to parse Json data
+                  -3 : unknown respones dataType
+            
+                  and HTTP status codes!
+                
+                */
+
+                function createXMLHTTPObject() {
+
+                    var XMLHttpFactories = [
+                        function () { return new XMLHttpRequest() },
+                        function () { return new ActiveXObject("Msxml3.XMLHTTP") },
+                        function () { return new ActiveXObject("Msxml2.XMLHTTP.6.0") },
+                        function () { return new ActiveXObject("Msxml2.XMLHTTP.3.0") },
+                        function () { return new ActiveXObject("Msxml2.XMLHTTP") },
+                        function () { return new ActiveXObject("Microsoft.XMLHTTP") }
+                    ];
+                    var xmlhttp = false;
+                    for (var i = 0; i < XMLHttpFactories.length; i++) {
+                        try {
+                            xmlhttp = XMLHttpFactories[i]();
+                        }
+                        catch (e) {
+                            continue;
+                        }
+                        break;
+                    }
+                    return xmlhttp;
+                }
+
+                var xhr = createXMLHTTPObject();
+                if (!xhr)
+                    _error(-1);
+
+                var form_data = new FormData();
+                if (param.data instanceof Object) {
+                    for (var key in param.data) {
+                        form_data.append(key, param.data[key]);
+                    }
+                }
+                //bind events
+                var readyStateChange = function (res) {
+                    if (res.readyState == 4) {
+                        if (res.status == 200) {
+                            param.dataType.toLowerCase()
+                            var data = null;
+                            switch (param.dataType.toLowerCase()) {
+                                case "json": try {
+                                    data = JSON.parse(res.responseText);
+                                } catch (e) { param.error(-2) }
+                                    break;
+                                case "text": data = res.responseText; break;
+                                case "xml": data = res.responseXML; break;
+                                default: param.error(-3); return false;
+                            }
+                            param.success(data);
+
+                        } else {
+                            param.error(res.status);
+                        }
+                    }
+                }
+
+                xhr.onreadystatechange = function () { readyStateChange(this) };
+                //start connect & send data
+                xhr.open(param.method, param.url + ((/\?/).test(param.url) ? "&" : "?") + (new Date()).getTime());
+                xhr.send(form_data);
+            }
+
+            var api = $("#api")[0];
+            var inp = $("#data")[0];
+            var btn = $("button")[0];
+
+
+            btn.addEventListener("click", function () {
+                put.innerHTML = "Loading...";
+                XHRequest({
+                    url: "/api/", method: "POST", data: { api: api.value, data: inp.value }, dataType: 'text', success: function (data) {
+                        console.log(put);
+                        put.innerText = data;
+                    }
+                });
+            });
+
+
+        })()
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+ErrorDocument 404 /front-end/index.html
+RewriteEngine ON
+RewriteRule ^api/$ /api/api.php [L]
+RewriteRule ^$ /front-end/index.html [L]
+
